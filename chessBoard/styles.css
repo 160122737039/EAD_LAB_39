@@ -1,0 +1,42 @@
+.board {
+    display: flex;
+    height: 50em;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    height: 12.5%;
+    width: 50em;
+  }
+  
+  .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 12.5%;
+    height: 100%;
+    margin: auto;
+    font-size: 3rem;
+  }
+  
+  .row .square:nth-of-type(even) {
+     background-color: lightgreen;
+   }
+  
+   .row .square:nth-of-type(odd) {
+     background-color: dodgerblue;
+   }
+  
+  .row:nth-of-type(even)
+    .square:nth-of-type(even) {
+      background-color: dodgerblue;
+    }
+  
+  .row:nth-of-type(even)
+    .square:nth-of-type(odd) {
+      background-color: lightgreen;
+    }
